@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cocktail World</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		img{ position:absolute; display:block; margin:auto;}
+		.wrap{ display: block;  position:relative; margin:auto;width: 1000px; height: 100%;}
+		.back{width: 1000px; margin:auto; display: block;}
+		.jamesbond{display : block; position: absolute; top: 900px; left: 0px; width: 300px; overflow: hidden; z-index:0; }
+		.martini{display : block; position: absolute; top: 880px; left: 700px; width: 290px; transition: all 0.1s;}
+		.martini:hover{transform:rotate(+45deg);}
+		.olive{animation: po2 2s infinite}
+			@keyframes po2{
+  				from{left:0px;}
+  				to{left:100px;}}
+  		.martinitxt{z-index: 998; position: absolute; animation: gr 10s infinite alternate ease; top:200px; width: 200px;}
+		.martinitxt2{z-index: 998; position: absolute; animation: gr 8s infinite alternate ease; top:200px; width: 200px;}
+			@keyframes gr{
+				from{left:1000px;}
+				to{left:5px; }}
+		
+
+		.milk{display : block; position: absolute; top: 500px; left:400px; transition: all 0.1s;z-index: 1}
+		.KAHLUAMILKtxt{display : block; position: absolute; z-index:0;}
+		.milk:hover{transform:rotate(-30deg);}
+		.khaluamilk_BIG{display : block; position: absolute; left:200px; top: 500px; transition: all 0.1s;z-index: 1 ;}
+		.KhaluaMilk{display : block; position: absolute; animation: lo 5s infinite linear; z-index:0;}
+			@keyframes lo{
+				to{ transform: rotate(360deg); }}
+		.kahluabottle{display: block;position: absolute; width: 500px; top:2100px;left:  700px; animation: move2 1.6s  infinite linear;  display: block;  animation-direction: alternate;}
+			@keyframes  move2 {
+	 			from{ top: 2100px;}
+	 			to { top: 1700px;}}
+		.kahluabottle2{display: block;position: absolute; width: 300px; top:2100px;left:  0px; animation: move1 1.3s  infinite linear;  display: block;  animation-direction: alternate;>}
+			@keyframes  move1 {
+	 			from{ top: 2400px;}
+	 			to { top: 1500px;}}
+
+		
+		.whiterussian{display: block;position: absolute;top: 3400px; right: 15px; width: 500px; animation: wo 1s infinite linear;  display: block; z-index: 50; animation-direction: alternate;}
+			@keyframes  wo {
+	 			from{transform: rotate3D(0,0,1,-10deg);}
+	 			to { transform: rotate3D(0,0,1,10deg); }}
+		.shippescream_big1{display: block;position: absolute; z-index: 60;animation: po3 3.5s infinite;}
+  			@keyframes po3{
+  				from{top:2600px;}
+  				to{top:3350px; ;transform:rotate(-360deg)}}
+ 		.shippescream_big2{display: block;position: absolute; z-index: 60;animation: po3 1.5s infinite;}
+  			@keyframes po3{
+  				from{top:2600px;}
+  				to{top:3350px; ;transform:rotate(-360deg)}} 				
+		.shippescream_big3{display: block;position: absolute; z-index: 60;animation: po3 5s infinite;}
+  			@keyframes po3{
+  				from{top:2600px;}
+  				to{top:3050px; ;transform:rotate(-360deg)}}		
+		.shippescream_big4{display: block;position: absolute; z-index: 60;animation: po3 8s infinite;}
+  			@keyframes po3{
+  				from{top:2600px;}
+  				to{top:3350px; ;transform:rotate(-360deg)}}
+		.White{z-index: 998; position: absolute; animation: po4 6s infinite alternate ease; top:2600px; width: 500px;}
+			@keyframes po4{
+				from{left:1500px;}
+				to{left:-50px; }}
+		.Russian{z-index: 998; position: absolute; animation: po5 5s infinite alternate ease; top:3200px; width: 500px;}
+			@keyframes po5{
+				from{left:-50px;}
+				to{left:700px; }}			
+		.whiteflower{display: block;position: absolute; animation: lo 7s infinite  linear ; z-index: 0;}
+		
+		.peachneon{ z-index: 30;
+			animation: vo 0.4s infinite  linear;  display: block; z-index: 50; animation-direction: alternate; top: 3300px; left: 70px;}
+			@keyframes  vo {
+	 			from{opacity: 0;}
+	 			to { opacity: 100;}}
+	 	.peachcrushtxt			
+
+		.run:hover{transform: rotate(-10deg);}
+		
+		.bot2{display: block;position: absolute; top: 330px; width: 500px; z-index: 0;}
+		.sniper{display: block;position: absolute;right: -90px; width: 400px;}
+		.bang{display: block;position: absolute; left:200px; width: 250px;}
+		.bang:hover{ animation: so 0.5s infinite  linear ;}
+		.gun3{display: block;position: absolute;top: 250px; left: 400px; width: 100px; z-index: 3;}
+		.gun4{display: block;position: absolute;top: 300px; left: 40px; width: 230px; z-index: 3; opacity:0;}
+		.gun4:hover{opacity:100; }
+		.gun5{display: block;position: absolute;top: 100px; left: 150px; width: 80px; z-index: 3;}
+		.gun6{display: block;position: absolute;top: -180px; left: 340px; width: 100px; z-index: 3;opacity:0; }
+		.gun6:hover{opacity:100; }
+		.gun7{display: block;position: absolute;top: 630px; left: 240px; width: 180px; z-index: 3; animation: po 1s infinite  linear ;}
+			@keyframes po{
+  				from{left:0px;}
+  				to{left:500px;}}
+
+
+		.kingsman{width: 1080px;   position: absolute; right: 430px; bottom: 410px; 
+				animation: ro 1s infinite linear;  display: block; z-index: 50; animation-direction: alternate;}
+		.cloud { position: fixed; width:900px; height: 150px; z-index: 4; bottom: 700px; left: 550px; display: block;}
+		.bam6{ z-index: 40; position: absolute;bottom: 400px; right: 100px; animation: uo 0.6s infinite linear;  display: block;  animation-direction: alternate;}
+		.bround{ position: absolute; width: 1200px; top: 980px; right: 345px; margin-bottom: 130px; z-index: 5; display: block;}
+		.king{position: relative; top: 1120px; z-index: 11; display: block; left: 820px; width: 1100px; animation: zoo 10s infinite linear;  display: block;  animation-direction: alternate;}
+		.zap{position: absolute; z-index: 45; left: 500px; top: 530px; width: 500px;}
+		.zap2{position: absolute; z-index: 45; left: 180px; top: 830px; width: 500px; transform: rotate3d(0,0,1,-20deg);}
+		.pop{position: absolute; z-index: 19; left: 200px; top: 600px; width: 600px;}
+		.kingsman2{width: 400px;  position: absolute; left: 430px; top: 750px; 
+				animation: go 0.6s infinite linear;  display: block; z-index: 50; animation-direction: alternate;}
+		.kingsman3{width: 400px;  position: absolute; left: 430px; top: 750px; 
+				animation: go 0.5s infinite ease-out;  display: block; z-index: 50; animation-direction: alternate;}	
+		.temi{position: absolute; right: 430px; top: 580px; z-index: 30;
+			animation: vo 0.4s infinite  linear;  display: block; z-index: 50; animation-direction: alternate;}
+		.sunsin{ width: 380px; position: absolute; z-index: 47; left: 400px; top: 350px; animation: zo 10s infinite linear;  display: block;  animation-direction: alternate; }		
+		.hey{animation: yo 1.2s infinite ease-out;  display: block;  animation-direction: alternate; z-index: 0; position: absolute; left: 600px; width: 400px; transition: all ease 0.5s;
+			}
+			.hey:hover {
+				transform: rotate( 45deg );
+			}}	
+		@keyframes ro{
+			to{ transform: translateY(-10%); }
+		}
+		
+		
+
+		@keyframes so{
+			to{ transform: rotate(60deg); width: 400px; }
+		}
+	
+		@keyframes to {
+  			0%   {background-color: red; left:0px;}
+  			50%  {background-color: yellow; left:200px;}
+  			100% {background-color: red; left:0px;}
+
+
+
+  		@keyframes  yo {
+	 			from{opacity: 0;}
+	 			to { opacity: 100; }}
+	 		@keyframes  go {
+	 			from{transform: rotate3D(0,1,0,-10deg);}
+	 			to { transform: rotate3D(0,1,0,180deg); }}
+	 		@keyframes  ro {
+	 			from{transform: rotate3D(0,0,1,-10deg);}
+	 			to { transform: rotate3D(0,0,1,10deg); }}
+	 		@keyframes  roo {
+	 			from{}
+	 			to { transform: rotate(360deg); }}	 			
+	 		@keyframes  uo {
+	 			from{ width:800px; }
+	 			to { width:600px; }}
+	 		@keyframes  vo {
+	 			from{opacity: 0;}
+	 			to { opacity: 100;}}		 
+	 		@keyframes  zo {
+	 			from{left: 400px; top: 250px;}
+	 			to {left: 1200px; top: 350px;}}	
+	 		@keyframes  zoo {
+	 			from{ top: 250px;}
+	 			to { top: 1120px;}}
+	 		@keyframes  zooo {
+	 			from{ left: 20px;}
+	 			to { left: 100px;}}
+	 		@keyframes  zoom1 {
+	 			from{ top: 1300px;}
+	 			to { top: 1000px;}}	 		
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="wrap">
+		<div class="back" >
+		<img src="background.jpg">
+		<section style="overflow:hidden;">
+			<img src="JamesBond.png" class="jamesbond">
+			<img src="JAMEBOND.png" class="jamesbond" style="top: 1100px; width: 1200px;">
+			<img src="martini.png" class="martini">
+			<img src="olive.png" class="olive" top:200px;>
+			<img src="MARTINItxt.png" class="martinitxt" style="width: 800px;">
+			<img src="MARTINI_whitetxt.png" class="martinitxt2" style="width: 800px;">
+			
+
+			<img src="milk.png" class="milk" style="top:1500px; width: 800px;">
+			<img src="KAHLUAMILKtxt.png" class="KAHLUAMILKtxt" style=" top: 1400px; width: 150px; left:940px;z-index: 9999">
+			<img src="khaluamilk_BIG.png" class="khaluamilk_BIG" style="top:2300px; right:100px;width: 500px;">
+			<img src="KhaluaMilk.png" class="KhaluaMilk" style=" top: 2500px; width: 150px; right:800px;">
+			<img src="KhaluaMilk.png" class="KhaluaMilk" style=" top: 2000px; width: 150px; right:500px;">
+			<img src="KhaluaMilk.png" class="KhaluaMilk" style=" top: 2500px; width: 150px; right:100px;">
+			<img src="KhaluaMilk.png" class="KhaluaMilk" style=" top: 1350px; width: 150px; left:840px;">
+			<img src="KhaluaMilk.png" class="KhaluaMilk" style=" top: 1300px; width: 150px; right:800px;">
+			<img src="kahluabottle.png" class="kahluabottle" >
+			<img src="kahluabottle2.png" class="kahluabottle2" >
+
+			<img src="whiterussian.png" class="whiterussian" >
+			<img src="shippescream_big.png" class="shippescream_big1" style="top: 3400px; right: 15px; width: 100px;">
+			<img src="shippescream_big.png" class="shippescream_big2" style="top: 3400px; right: 60px; width: 200px;">
+			<img src="shippescream_big.png" class="shippescream_big3" style="top: 2800px; right: 150px; width: 450px;">
+			<img src="shippescream_big.png" class="shippescream_big4" style="top: 3400px; right: 200px; width: 300px;">
+			<img src="whiteflower.png" class="whiteflower" style=" top: 2900px; left:50px; width:1200px;">
+			<img src="White.png" class="White" style="top: 3400px; right: 400px; width: 600px;" >
+			<img src="White_1.png" style="top: 3400px; right: 400px; width: 600px;">
+			<img src="Russian.png" class="Russian" style="top: 4000px; left: 400px; width: 600px;">
+			<img src="Russian_1.png"  style="top: 4000px; left: 640px; width: 600px;">
+			
+
+			<img src="peachneon.png" class="peachneon" style="  top: 4300px; left: 70px;">
+
+
+			<img src="banana.png" class="gun2" style=" top: 6000px;">
+			<img src="bloodyflower.png" class="bot" style=" top: 6500px;">
+			<img src="bloodyflower.png" class="boom"style=" top: 7000px;">
+			<img src="bloodyflower.png" class="bot"style=" top: 7500px;">
+			<img src="crewdriver.png" class="run"style=" top: 13000px; left: 500px;">
+			<img src="eggflower.png" class="sunsin"style=" top: 6000px; left: 820px;">
+			<img src="midorisour.jpg" class="bot2"style=" top: 8000px;">
+			<img src="orange_icecream.png" class="pop"style=" top: 13000px; left: 0px;" >
+			<img src="rainbow_neon.png" class="bang"style=" top: 9000px; left:700px; width:500px;">
+			<img src="peach.png" class="gun3"style=" top: 5000px; width: 900px; left:0px;">
+			<img src="blo_o_dy.png" class="gun4"style=" top: 6000px;">
+			<img src="rainbow_neon.png" class="gun5"style=" top: 10000px;">
+			<img src="sexonthebeach.png" class="gun6"style=" top: 11500px; width: 700px;">
+			<img src="palmleep.png" class="hey"style=" top: 6000px; left:0px;">
+			<img src="orange.png" class="hey"style=" top: 12750px;left: 600px;">
+			<img src="palmlef3.png" class="hey"style=" top: 9500px; left: 0px;">
+			<img src="sexonthebeach_neon.png" class="hey"style=" top: 11000px;">
+			<img src="sexonthebeach_neon.png" class="hey"style=" top: 12000px; left: 60px;">
+			<img src="sexonthebeach_neon.png" class="hey"style=" top: 10500px; left: 80px;">
+			<img src="gumgum.png" class="hey"style=" top: 7500px; width: 800px; left: 0px;">
+			<img src="palmleep.png" class="hey"style=" top: 8000px; left: 0px;">
+		</section>
+		</div>
+	</div>
+	
+</body>
+</html>
